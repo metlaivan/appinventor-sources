@@ -607,6 +607,11 @@ public final class YoungAndroidFormUpgrader {
       // No properties need to be modified to upgrade to version 2.
       srcCompVersion = 2;
     }
+    if (srcCompVersion < 3) {
+      // The UseFront property was deprecated.
+      // No properties need to be modified to upgrade to version 3.
+      srcCompVersion = 3;
+    }
     return srcCompVersion;
   }
 
